@@ -13,6 +13,10 @@
 		071A05B0262A66D300238FD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A05AF262A66D300238FD6 /* Preview Assets.xcassets */; };
 		071A05BB262A66D300238FD6 /* uwuTrackVRSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05BA262A66D300238FD6 /* uwuTrackVRSyncTests.swift */; };
 		071A05C6262A66D300238FD6 /* uwuTrackVRSyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05C5262A66D300238FD6 /* uwuTrackVRSyncUITests.swift */; };
+		071A05D7262A689900238FD6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05D6262A689900238FD6 /* HomeView.swift */; };
+		071A05DC262A68CF00238FD6 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05DB262A68CF00238FD6 /* ConnectView.swift */; };
+		071A05E1262A68EB00238FD6 /* OutputLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05E0262A68EB00238FD6 /* OutputLogView.swift */; };
+		071A05E6262A771A00238FD6 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05E5262A771A00238FD6 /* NavigationBarModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		071A05C1262A66D300238FD6 /* uwuTrackVRSyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uwuTrackVRSyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		071A05C5262A66D300238FD6 /* uwuTrackVRSyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uwuTrackVRSyncUITests.swift; sourceTree = "<group>"; };
 		071A05C7262A66D300238FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071A05D6262A689900238FD6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		071A05DB262A68CF00238FD6 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		071A05E0262A68EB00238FD6 /* OutputLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputLogView.swift; sourceTree = "<group>"; };
+		071A05E5262A771A00238FD6 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				071A05AC262A66D300238FD6 /* Assets.xcassets */,
 				071A05B1262A66D300238FD6 /* Info.plist */,
 				071A05AE262A66D300238FD6 /* Preview Content */,
+				071A05D6262A689900238FD6 /* HomeView.swift */,
+				071A05DB262A68CF00238FD6 /* ConnectView.swift */,
+				071A05E0262A68EB00238FD6 /* OutputLogView.swift */,
+				071A05E5262A771A00238FD6 /* NavigationBarModifier.swift */,
 			);
 			path = uwuTrackVRSync;
 			sourceTree = "<group>";
@@ -259,6 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071A05D7262A689900238FD6 /* HomeView.swift in Sources */,
+				071A05E1262A68EB00238FD6 /* OutputLogView.swift in Sources */,
+				071A05E6262A771A00238FD6 /* NavigationBarModifier.swift in Sources */,
+				071A05DC262A68CF00238FD6 /* ConnectView.swift in Sources */,
 				071A05AB262A66D200238FD6 /* ContentView.swift in Sources */,
 				071A05A9262A66D200238FD6 /* uwuTrackVRSyncApp.swift in Sources */,
 			);
@@ -419,6 +435,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"uwuTrackVRSync/Preview Content\"";
+				DEVELOPMENT_TEAM = GMM7PNFF66;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = uwuTrackVRSync/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +457,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"uwuTrackVRSync/Preview Content\"";
+				DEVELOPMENT_TEAM = GMM7PNFF66;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = uwuTrackVRSync/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

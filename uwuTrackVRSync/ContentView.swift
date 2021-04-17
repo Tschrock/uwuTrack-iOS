@@ -9,8 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "house.fill")
+                    }
+                ConnectView()
+                    .tabItem {
+                        Label("Connect", systemImage: "laptopcomputer")
+                    }
+                OutputLogView()
+                    .tabItem {
+                        Label("Output Log", systemImage: "questionmark.circle")
+                    }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("uwuTrackVR").font(.headline).foregroundColor(Color.white)
+                }
+            }.navigationBarColor(backgroundColor: UIColor(named: "AccentColor"), titleColor: .white)
+        }
     }
 }
 
