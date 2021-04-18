@@ -17,6 +17,7 @@
 		071A05DC262A68CF00238FD6 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05DB262A68CF00238FD6 /* ConnectView.swift */; };
 		071A05E1262A68EB00238FD6 /* OutputLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05E0262A68EB00238FD6 /* OutputLogView.swift */; };
 		071A05EF262A860500238FD6 /* TcpClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05EE262A860500238FD6 /* TcpClientService.swift */; };
+		077AA4BC262BD3730002B5FF /* SilencePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AA4BB262BD3730002B5FF /* SilencePlayer.swift */; };
 		07B0F150262AC8A000D561E9 /* MotionSensorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0F14F262AC8A000D561E9 /* MotionSensorService.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		071A05E0262A68EB00238FD6 /* OutputLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputLogView.swift; sourceTree = "<group>"; };
 		071A05EE262A860500238FD6 /* TcpClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TcpClientService.swift; sourceTree = "<group>"; };
 		071A05F3262A9D9900238FD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		077AA4BB262BD3730002B5FF /* SilencePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilencePlayer.swift; sourceTree = "<group>"; };
 		07B0F14F262AC8A000D561E9 /* MotionSensorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSensorService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				071A05AC262A66D300238FD6 /* Assets.xcassets */,
 				071A05B1262A66D300238FD6 /* Info.plist */,
 				071A05AE262A66D300238FD6 /* Preview Content */,
+				077AA4BB262BD3730002B5FF /* SilencePlayer.swift */,
 			);
 			path = uwuTrackVRSync;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				071A05AB262A66D200238FD6 /* MainAppView.swift in Sources */,
 				071A05A9262A66D200238FD6 /* uwuTrackVRSyncApp.swift in Sources */,
 				071A05EF262A860500238FD6 /* TcpClientService.swift in Sources */,
+				077AA4BC262BD3730002B5FF /* SilencePlayer.swift in Sources */,
 				07B0F150262AC8A000D561E9 /* MotionSensorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,8 @@ class TcpClientService: ObservableObject {
     private var packetId: Int64 = 0
     
     private var connection: NWConnection?
-    
+    private let silencePlayer = SilencePlayer()
+   
     weak var motionSensorService: MotionSensorService?
     
     func updateStatus(status: String) {
@@ -41,6 +42,7 @@ class TcpClientService: ObservableObject {
         self.port = port
         self.isConnected = true
         self.packetId = 0
+        self.silencePlayer.play()
         guard let connection = self.connection else {
             return
         }
@@ -81,7 +83,10 @@ class TcpClientService: ObservableObject {
     func disconnect() {
         self.updateStatus(status: "disconnecting")
         self.motionSensorService?.stopUpdates()
-        self.isConnected = false
+        DispatchQueue.main.async {
+            self.isConnected = false
+        }
+        self.silencePlayer.stop()
         guard let connection = self.connection else {
             return
         }
@@ -138,7 +143,6 @@ class TcpClientService: ObservableObject {
         for value in values {
             withUnsafeBytes(of: value.bitPattern.bigEndian) { data.append(contentsOf: $0) }
         }
-        self.updateStatus(status: "Sending data: " + data.base64EncodedString())
         connection.send(content: data, completion: NWConnection.SendCompletion.contentProcessed({ _ in }))
         self.packetId += 1
     }
