@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
+import Network
 
 struct ConnectView: View {
+    @EnvironmentObject private var tcpClientService: TcpClientService
     @State var remoteIp: String = "";
     @State var remotePort: String = "";
     
     var body: some View {
-        List {
+        Form {
             Section(header: Text("Enter the IP and port, then tap connect.")) {
                 TextField("IP", text: $remoteIp)
                     .keyboardType(/*@START_MENU_TOKEN@*/.numbersAndPunctuation/*@END_MENU_TOKEN@*/)
@@ -21,22 +23,37 @@ struct ConnectView: View {
             }
             .padding(.top)
             Button(action: {
-                print("connect")
+                if self.tcpClientService.isConnected {
+                    self.tcpClientService.disconnect()
+                }
+                else {
+                    self.tcpClientService.connect(address: self.remoteIp, port: self.remotePort)
+                }
             }) {
                 HStack {
                     Spacer()
-                    Text("Connect")
+                    if self.tcpClientService.isConnected {
+                        Text("Disconnect")
+                    }
+                    else {
+                        Text("Connect")
+                    }
                     Spacer()
                 }
             }
         }
-        .listStyle(InsetGroupedListStyle())
-        .environment(\.horizontalSizeClass, .regular)
+        .onAppear {
+            self.remoteIp = self.tcpClientService.address
+            self.remotePort = self.tcpClientService.port
+        }
     }
 }
 
 struct ConnectView_Previews: PreviewProvider {
     static var previews: some View {
         ConnectView()
+            .preferredColorScheme(.light)
+        ConnectView()
+            .preferredColorScheme(.dark)
     }
 }

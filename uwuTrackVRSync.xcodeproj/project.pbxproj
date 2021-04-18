@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		071A05A9262A66D200238FD6 /* uwuTrackVRSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05A8262A66D200238FD6 /* uwuTrackVRSyncApp.swift */; };
-		071A05AB262A66D200238FD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05AA262A66D200238FD6 /* ContentView.swift */; };
+		071A05AB262A66D200238FD6 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05AA262A66D200238FD6 /* MainAppView.swift */; };
 		071A05AD262A66D300238FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A05AC262A66D300238FD6 /* Assets.xcassets */; };
 		071A05B0262A66D300238FD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A05AF262A66D300238FD6 /* Preview Assets.xcassets */; };
 		071A05BB262A66D300238FD6 /* uwuTrackVRSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05BA262A66D300238FD6 /* uwuTrackVRSyncTests.swift */; };
@@ -16,7 +16,8 @@
 		071A05D7262A689900238FD6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05D6262A689900238FD6 /* HomeView.swift */; };
 		071A05DC262A68CF00238FD6 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05DB262A68CF00238FD6 /* ConnectView.swift */; };
 		071A05E1262A68EB00238FD6 /* OutputLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05E0262A68EB00238FD6 /* OutputLogView.swift */; };
-		071A05E6262A771A00238FD6 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05E5262A771A00238FD6 /* NavigationBarModifier.swift */; };
+		071A05EF262A860500238FD6 /* TcpClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A05EE262A860500238FD6 /* TcpClientService.swift */; };
+		07B0F150262AC8A000D561E9 /* MotionSensorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B0F14F262AC8A000D561E9 /* MotionSensorService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 /* Begin PBXFileReference section */
 		071A05A5262A66D200238FD6 /* uwuTrackVRSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uwuTrackVRSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		071A05A8262A66D200238FD6 /* uwuTrackVRSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uwuTrackVRSyncApp.swift; sourceTree = "<group>"; };
-		071A05AA262A66D200238FD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		071A05AA262A66D200238FD6 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		071A05AC262A66D300238FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		071A05AF262A66D300238FD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		071A05B1262A66D300238FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +53,9 @@
 		071A05D6262A689900238FD6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		071A05DB262A68CF00238FD6 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
 		071A05E0262A68EB00238FD6 /* OutputLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputLogView.swift; sourceTree = "<group>"; };
-		071A05E5262A771A00238FD6 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		071A05EE262A860500238FD6 /* TcpClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TcpClientService.swift; sourceTree = "<group>"; };
+		071A05F3262A9D9900238FD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		07B0F14F262AC8A000D561E9 /* MotionSensorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSensorService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		071A059C262A66D100238FD6 = {
 			isa = PBXGroup;
 			children = (
+				071A05F3262A9D9900238FD6 /* README.md */,
 				071A05A7262A66D200238FD6 /* uwuTrackVRSync */,
 				071A05B9262A66D300238FD6 /* uwuTrackVRSyncTests */,
 				071A05C4262A66D300238FD6 /* uwuTrackVRSyncUITests */,
@@ -103,15 +107,12 @@
 		071A05A7262A66D200238FD6 /* uwuTrackVRSync */ = {
 			isa = PBXGroup;
 			children = (
+				071D6ADF262AB27C00B29353 /* Views */,
+				071A05ED262A85D800238FD6 /* Services */,
 				071A05A8262A66D200238FD6 /* uwuTrackVRSyncApp.swift */,
-				071A05AA262A66D200238FD6 /* ContentView.swift */,
 				071A05AC262A66D300238FD6 /* Assets.xcassets */,
 				071A05B1262A66D300238FD6 /* Info.plist */,
 				071A05AE262A66D300238FD6 /* Preview Content */,
-				071A05D6262A689900238FD6 /* HomeView.swift */,
-				071A05DB262A68CF00238FD6 /* ConnectView.swift */,
-				071A05E0262A68EB00238FD6 /* OutputLogView.swift */,
-				071A05E5262A771A00238FD6 /* NavigationBarModifier.swift */,
 			);
 			path = uwuTrackVRSync;
 			sourceTree = "<group>";
@@ -140,6 +141,26 @@
 				071A05C7262A66D300238FD6 /* Info.plist */,
 			);
 			path = uwuTrackVRSyncUITests;
+			sourceTree = "<group>";
+		};
+		071A05ED262A85D800238FD6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				071A05EE262A860500238FD6 /* TcpClientService.swift */,
+				07B0F14F262AC8A000D561E9 /* MotionSensorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		071D6ADF262AB27C00B29353 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				071A05AA262A66D200238FD6 /* MainAppView.swift */,
+				071A05D6262A689900238FD6 /* HomeView.swift */,
+				071A05E0262A68EB00238FD6 /* OutputLogView.swift */,
+				071A05DB262A68CF00238FD6 /* ConnectView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +294,11 @@
 			files = (
 				071A05D7262A689900238FD6 /* HomeView.swift in Sources */,
 				071A05E1262A68EB00238FD6 /* OutputLogView.swift in Sources */,
-				071A05E6262A771A00238FD6 /* NavigationBarModifier.swift in Sources */,
 				071A05DC262A68CF00238FD6 /* ConnectView.swift in Sources */,
-				071A05AB262A66D200238FD6 /* ContentView.swift in Sources */,
+				071A05AB262A66D200238FD6 /* MainAppView.swift in Sources */,
 				071A05A9262A66D200238FD6 /* uwuTrackVRSyncApp.swift in Sources */,
+				071A05EF262A860500238FD6 /* TcpClientService.swift in Sources */,
+				07B0F150262AC8A000D561E9 /* MotionSensorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

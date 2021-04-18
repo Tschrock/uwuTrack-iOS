@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct uwuTrackVRSyncApp: App {
+    @StateObject var clientService = TcpClientService()
+    @StateObject var sensorService = MotionSensorService()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainAppView()
+                .environmentObject(clientService)
+                .environmentObject(sensorService)
+                .onAppear {
+                    self.clientService.motionSensorService = sensorService
+                    self.sensorService.tcpClientService = self.clientService
+                }
         }
     }
 }
